@@ -1,16 +1,16 @@
 FROM ubuntu:20.04
-MAINTAINER "JuliBCN" <julibcn@gmail.com>
+LABEL maintainer="JuliBCN <julibcn@gmail.com>"
 
 # Install dependencies
 RUN apt-get update
 RUN apt-get -y install apache2
 
-# Install apache and write hello world message
+# Install Apache and copy the SRC directory with files
 RUN rm -rf /var/www/*
 ADD src /var/www/html
 RUN echo ServerName ${HOSTNAME} >> /etc/apache2/apache2.conf
 
-# Configure apache
+# Configure Apache to run with Docker
 RUN echo '. /etc/apache2/envvars' > /root/run_apache.sh
 RUN echo 'mkdir -p /var/run/apache2' >> /root/run_apache.sh
 RUN echo 'mkdir -p /var/lock/apache2' >> /root/run_apache.sh

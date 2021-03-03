@@ -12,7 +12,15 @@ Get IT Done Carrousel - Docker App (2021)
 
 > sudo systemctl enable docker
 
-> sudo docker info
+> docker info
 
-## Build it
 
+
+## Download and Build it
+> sudo yum install -y git
+
+> git clone https://github.com/Juli-BCN/get-it-done-docker.git
+
+> cd get-it-done-docker
+
+> docker build -t get-it-done .
