@@ -16,7 +16,7 @@ Get IT Done Carrousel - Docker App (2021)
 
 
 
-## Download and Build it
+## Download the code and Build the container
 > sudo yum install -y git
 
 > git clone https://github.com/Juli-BCN/get-it-done-docker.git
@@ -26,3 +26,12 @@ Get IT Done Carrousel - Docker App (2021)
 > docker build -t get-it-done .
 
 > docker images
+
+
+
+## Run & Stop the Docker container
+> docker run -d -p 80:80 get-it-done
+
+> docker ps
+
+> docker stop *CONTAINER ID* :eyeglasses:
