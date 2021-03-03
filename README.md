@@ -36,7 +36,7 @@ Get IT Done Carrousel - Docker App (2021)
 
 > docker ps
 
-> :eyeglasses: docker stop *CONTAINER ID*
+> :eyeglasses: docker stop *CONTAINER_ID*
 
 
 ## Tag & Upload Container to DockerHub
@@ -47,5 +47,7 @@ Reference:
 
 Like:
 > docker image tag get-it-done:latest julibcn/get-it-done-2021:latest
+
+> docker login
 
 > docker push julibcn/get-it-done-2021:latest
