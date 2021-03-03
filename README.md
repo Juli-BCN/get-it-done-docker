@@ -24,3 +24,5 @@ Get IT Done Carrousel - Docker App (2021)
 > cd get-it-done-docker
 
 > docker build -t get-it-done .
+
+> docker images
