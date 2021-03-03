@@ -54,5 +54,27 @@ Like:
 > docker push julibcn/get-it-done-2021:latest
 
 
+
+## Tag & Upload Container to GitHub Packages
+Reference:
+> :eyeglasses: docker image tag *SOURCE_IMAGE:SOURCE_TAG* *TARGET_IMAGE:TARGET_TAG*
+
+> :eyeglasses: docker push ghcr.io/*OWNER_NAME/IMAGE_NAME:latest*
+
+
+Like:
+> docker image tag get-it-done:latest ghcr.io/juli-bcn/get-it-done-2021:latest
+
+> docker login ghcr.io
+
+> docker push ghcr.io/juli-bcn/get-it-done-2021:latest
+
+
+
 ## Run the image from DockerHub
 > docker run -d -p 80:80 julibcn/get-it-done-2021:latest
+
+
+
+## Run the image from DockerHub
+> docker run -d -p 80:80 ghcr.io/juli-bcn/get-it-done-2021:latest
