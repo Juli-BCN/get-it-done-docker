@@ -76,5 +76,5 @@ Like:
 
 
 
-## Run the image from DockerHub
+## Run the image from GitHub Packages
 > docker run -d -p 80:80 ghcr.io/juli-bcn/get-it-done-2021:latest
