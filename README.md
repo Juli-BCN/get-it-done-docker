@@ -29,9 +29,21 @@ Get IT Done Carrousel - Docker App (2021)
 
 
 
-## Run & Stop the Docker container
+## Run, Test & Stop the Docker container
 > docker run -d -p 80:80 get-it-done
+
+> curl -L http://localhost
 
 > docker ps
 
-> docker stop *CONTAINER ID* :eyeglasses:
+> :eyeglasses: docker stop *CONTAINER ID*
+
+
+## Tag & Upload Container to DockerHub
+Reference:
+> docker image tag *SOURCE_IMAGE:SOURCE_TAG* *TARGET_IMAGE:TARGET_TAG*
+> docker push *TARGET_IMAGE:TARGET_TAG*
+
+Like:
+> docker image tag get-it-done:latest julibcn/get-it-done-2021:latest
+> docker push julibcn/get-it-done-2021:latest
