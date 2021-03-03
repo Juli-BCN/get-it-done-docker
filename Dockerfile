@@ -1,5 +1,5 @@
-FROM ubuntu:18.04
-MAINTAINER "Julian Martin" <julian.martin@leaseplan.com>
+FROM ubuntu:20.04
+MAINTAINER "JuliBCN" <julibcn@gmail.com>
 
 # Install dependencies
 RUN apt-get update
