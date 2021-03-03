@@ -41,9 +41,11 @@ Get IT Done Carrousel - Docker App (2021)
 
 ## Tag & Upload Container to DockerHub
 Reference:
-> docker image tag *SOURCE_IMAGE:SOURCE_TAG* *TARGET_IMAGE:TARGET_TAG*
-> docker push *TARGET_IMAGE:TARGET_TAG*
+> :eyeglasses: docker image tag *SOURCE_IMAGE:SOURCE_TAG* *TARGET_IMAGE:TARGET_TAG*
+
+> :eyeglasses: docker push *TARGET_IMAGE:TARGET_TAG*
 
 Like:
 > docker image tag get-it-done:latest julibcn/get-it-done-2021:latest
+
 > docker push julibcn/get-it-done-2021:latest
