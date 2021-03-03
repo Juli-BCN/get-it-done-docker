@@ -45,9 +45,14 @@ Reference:
 
 > :eyeglasses: docker push *TARGET_IMAGE:TARGET_TAG*
 
+
 Like:
 > docker image tag get-it-done:latest julibcn/get-it-done-2021:latest
 
 > docker login
 
 > docker push julibcn/get-it-done-2021:latest
+
+
+## Run the image from DockerHub
+> docker run -d -p 80:80 julibcn/get-it-done-2021:latest
