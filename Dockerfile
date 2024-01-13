@@ -15,4 +15,4 @@ RUN echo ServerName ${HOSTNAME} >> /etc/apache2/apache2.conf
 EXPOSE 80
 
 # Specify initialization command
-CMD [“apache2ctl”, “-D”, “FOREGROUND”]
+CMD ["apache2ctl", "-D", "FOREGROUND"]
